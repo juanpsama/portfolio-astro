@@ -1,0 +1,70 @@
+---
+import TealBox from "../components/TealBox.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Juan P. | Contact">
+    <TealBox>
+      <div class="text-indigo">
+
+        <h5 class="hover:underline decoration-2 decoration-pink-300">
+            <a href="mailto: samajpablo@gmail.com ">
+                samajpablo@gmail.com
+            </a>
+        </h5>
+        <h5>
+            Phone: +52 961 251 9488    
+        </h5>
+
+        </div>
+    
+    <h2 class="my-5">Send me a message</h2>
+    <div class="mb-3 columns-1 required">
+      <label class="form-label" for="name">Your name</label>
+      <input
+        class="rounded-lg block w-full"
+        id="name"
+        name="name"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+
+    <div class="mb-3 required">
+      <label class="form-label" for="email">Your email</label>
+      <input
+        class="rounded-lg block w-full"
+        id="email"
+        name="email"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="phone">Phone</label>
+      <input
+        class="rounded-lg block w-full"
+        id="phone"
+        name="phone"
+        type="text"
+        value=""
+      />
+    </div>
+
+    <div class="mb-3 required">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="rounded-lg block w-full" 
+      id="message" name="message" required="">
+      </textarea>
+    </div>
+
+    <button class="bg-indigo-600 hover:bg-indigo-800 py-2 px-4 rounded-lg">
+        Send Message
+      </button>
+    
+    
+  </TealBox>
+</Layout>
