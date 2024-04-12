@@ -57,7 +57,7 @@ const { title } = Astro.props;
 	:root {
 		/* CSS HEX */
 		--indigo-dye: #053c5eff;
-		--rojo: #db222aff;
+		--red: #db222aff;
 		--teal: #1f7a8cff;
 		--madder: #a31621ff;
 		--columbia-blue: #bfdbf7ff;
@@ -94,6 +94,15 @@ const { title } = Astro.props;
 	
 	p { font-size: 1rem; }
 	
+	.bg-indigo{
+		background-color: var(--indigo-dye);
+	}
+	.bg-madder{
+		background-color: var(--madder);
+	}
+	.bg-pink{
+		background-color: var(--brigth-pink);
+	}
 	.text-indigo{
 		color: var(--indigo-dye);
 	}
