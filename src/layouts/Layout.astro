@@ -1,6 +1,12 @@
 ---
 import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components'
 import ProfileImage from '../../public/face.jpg';
+
+import {basics} from '../../cv.json'
+
+const{name, label, profiles} = basics
+
 
 interface Props {
 	title: string;
@@ -34,8 +40,8 @@ const { title } = Astro.props;
 		
 				<div class="block px-10">
 					<span>
-						<h2 class="text-teal text-shadow-teal" ><b>Juan P. Samayoa</b></h2>
-						<h5 class="mx-3 text-shadow-teal text-indigo">Developer</h5>
+						<h2 class="text-teal text-shadow-teal" ><b>{name}</b></h2>
+						<h5 class="mx-3 text-shadow-teal text-indigo">{label}</h5>
 					</span>
 			
 					<div class="inline-flex text-neutral-500 ">
@@ -50,6 +56,29 @@ const { title } = Astro.props;
 		<!-- <hr class="h-px my-2 mx-12 border-0 bg-gray-200 dark:bg-gray-700"> -->
 		
 		<slot />
+
+		<footer>
+
+			<div class="flex justify-center">
+				<div class="m-3">
+					<a href="https://www.linkedin.com/in/juanpsama" class="">
+						<Icon name="mdi:linkedin" class="text-4xl text-indigo" />
+					</a>
+				</div>
+				<div class="m-3">
+					<a href="">
+						<Icon name="mdi:instagram" class="text-4xl text-indigo" />
+					</a>
+				</div>
+				<div class="m-3">
+					<a href="https://github.com/juanpsama">
+						<Icon name="mdi:github" class="text-4xl text-indigo" />
+					</a>
+				</div>
+
+			</div>
+		</footer>
+
 	</body>
 
 </html>
