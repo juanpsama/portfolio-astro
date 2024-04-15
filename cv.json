@@ -1,7 +1,7 @@
 {
     "basics": {
       "name": "Juan P. Samayoa",
-      "label": "Software Developer",
+      "label": "Engineer",
       "image": "/face.jpg",
       "email": "samajpablo@gmail.com",
       "phone": "+52 961 251-9488",
@@ -114,8 +114,8 @@
       "name": "Document Manager",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "",
-      "image" : "projects_images/document_manager.png",
+      "description": "Web app to manage documents, upload files, aply filters, you can manage users, roles and permissions of each one. <br/>Try It* Credentials to test:<br/> mail: <strong>viewer@mail.com</strong> password: <strong>viewer</strong>",
+      "image" : "/projects_images/document_manager.png",
       "highlights": [
         "Won award at AIHacks 2016"
       ],
@@ -132,8 +132,8 @@
       "name": "Paint By Numbers",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "",
-      "image" : "projects_images/paint_by_numbers.png",
+      "description": "Web app that segments an image and assign numbers to each color to paint it by hand. Make an Special gift and become an artist yourself.",
+      "image" : "/projects_images/paint_by_numbers.png",
       "highlights": [
         "Won award at AIHacks 2016"
       ],
@@ -155,8 +155,9 @@
         "Won award at AIHacks 2016"
       ],
       "tags":[
-        "Python",
-        "Web"
+        "C#",
+        "Unity",
+        "Game Dev"
       ],
       "url": "https://thelastjpg.itch.io/cellattack",
       "github" : ""
@@ -166,7 +167,7 @@
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Bio-Bikes is a project that utilizes Python, Tkinter for the UI, OpenCV and Mediapipe's pose detection models to optimize performance and prevent injuries in cyclists.",
-      "image" : "projects_images/bikes.png",
+      "image" : "/projects_images/bikes.png",
       "highlights": [
         "Won award at AIHacks 2016"
       ],
@@ -185,7 +186,7 @@
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Maze of Bullet is a small yet intense game that places you, a tiny square, within the confines of a treacherous maze. Showcases my skills in game and programing logic",
-      "image" : "projects_images/maze.png",
+      "image" : "/projects_images/maze.png",
       "highlights": [
         "Won award at AIHacks 2016"
       ],

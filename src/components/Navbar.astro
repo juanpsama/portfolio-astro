@@ -1,0 +1,36 @@
+
+---
+import { Image } from "astro:assets"
+import ProfileImage from '../../public/face.jpg';
+import { getLangFromUrl, useTranslatedPath, useTranslations} from '../i18n/utils';
+import LanguagePicker from "./LanguagePicker.astro";
+
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+<nav>
+        <div class="flex flex-col md:flex-row justify-center items-center mt-14">
+            
+            <div class="h-40 w-40">
+                <Image src={ProfileImage} alt='Dont Work' width = 400 height=400 
+                loading="eager" class= "rounded-full h-full w-full object-cover"/>
+            </div>
+    
+            <div class="block px-10">
+                <span>
+                    <h2 class="text-teal text-shadow-teal" ><b>Juan .P Samayoa</b></h2>
+                    <h5 class="mx-3 text-shadow-teal text-indigo">{t('subtitle')}</h5>
+
+                </span>
+        
+                <div class="inline-flex text-neutral-500 ">
+                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300 " aria-current="page" href={translatePath('/')}>{t('nav.home')}</a>
+                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={translatePath('/projects/')}>{t('nav.projects')}</a>
+                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={translatePath('/contact/')} >{t('nav.contact')}</a>
+                </div>
+        
+            </div>
+        </div>
+    </nav>

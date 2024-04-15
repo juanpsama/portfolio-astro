@@ -1,22 +1,21 @@
 ---
-import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components'
-import ProfileImage from '../../public/face.jpg';
+import { getLangFromUrl } from '../i18n/utils';
 
-import {basics} from '../../cv.json'
-
-const{name, label, profiles} = basics
-
+import Navbar from '@/components/Navbar.astro';
+import LinkFooter from '@/components/LinkFooter.astro';
+import LanguagePicker from '@/components/LanguagePicker.astro';
 
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -27,56 +26,13 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<nav>
-			<div class="flex flex-col md:flex-row justify-center items-center mt-14">
-				
-				<div class="h-40 w-40">
-					
-					<Image src={ProfileImage} alt='Dont Work' width = 400 height=400 class= "rounded-full h-full w-full object-cover">
-
-					</Image>
-					<!-- <img src="/face.jpg" alt="" class="rounded-full h-full w-full object-cover"> -->
-				</div>
 		
-				<div class="block px-10">
-					<span>
-						<h2 class="text-teal text-shadow-teal" ><b>{name}</b></h2>
-						<h5 class="mx-3 text-shadow-teal text-indigo">{label}</h5>
-					</span>
-			
-					<div class="inline-flex text-neutral-500 ">
-						<a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300 " aria-current="page" href="/">About me</a>
-						<a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href="/projects">Projects</a>
-						<a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href="/contact">Contact me</a>
-					</div>
-			
-				</div>
-			</div>
-		</nav>
-		<!-- <hr class="h-px my-2 mx-12 border-0 bg-gray-200 dark:bg-gray-700"> -->
-		
+		<Navbar/>
 		<slot />
 
 		<footer>
-
-			<div class="flex justify-center">
-				<div class="m-3">
-					<a href="https://www.linkedin.com/in/juanpsama" class="">
-						<Icon name="mdi:linkedin" class="text-4xl text-indigo hover:text-black" />
-					</a>
-				</div>
-				<div class="m-3">
-					<a href="">
-						<Icon name="mdi:instagram" class="text-4xl text-indigo hover:text-black" />
-					</a>
-				</div>
-				<div class="m-3">
-					<a href="https://github.com/juanpsama">
-						<Icon name="mdi:github" class="text-4xl text-indigo hover:text-black" />
-					</a>
-				</div>
-
-			</div>
+			<LinkFooter/>
+			<LanguagePicker/>
 		</footer>
 
 	</body>

@@ -11,6 +11,9 @@ interface Props {
 const { image, title, 
       description, tags,
        github, url} = Astro.props;
+
+       
+console.log(image)
 ---
 <div class="relative rounded-lg shadow-xl shadow-cyan-900 bg-stone-50 text-indigo">
 
@@ -23,7 +26,7 @@ const { image, title,
         <div class="rounded-full bg-cyan-900 inline-block mx-1 px-2 py-0.5 text-stone-50 text-xs">{tag}</div>
       ))}
 
-      <p class="text-grey-darker text-base leading-normal">{description}</p>
+      <p class="text-grey-darker text-base leading-normal" set:html = {description}></p>
     </div>
 
     <div class="absolute inset-x-0 bottom-0 px-6 py-4 flex justify-center items-end">
