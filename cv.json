@@ -111,24 +111,93 @@
     }],
     "projects": [
     {
-      "name": "Project",
-    
+      "name": "Document Manager",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description...",
-      "image" : "",
+      "description": "",
+      "image" : "projects_images/document_manager.png",
       "highlights": [
         "Won award at AIHacks 2016"
       ],
-      "Tags":[
+      "tags":[
+        "Python",
+        "Flask",
+        "Web"
+      ],
+      "url": "https://flask-blog-om2x.onrender.com/login",
+      "github" : "https://github.com/juanpsama/Document-Manager-Flask"
+
+    },
+    {
+      "name": "Paint By Numbers",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "",
+      "image" : "projects_images/paint_by_numbers.png",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "tags":[
+        "Flask",
+        "Image Processing"
+      ],
+      "url": "",
+      "github" : ""
+
+    },
+    {
+      "name": "CellAttack", 
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "CellAttack is an exciting video game crafted with Unity using C#. Dive into the microscopic world where you take on the role of a bacterium trying to survive the onslaught of formidable bacteriophages ",
+      "image" : "/projects_images/cellattack.gif",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "tags":[
         "Python",
         "Web"
       ],
-      "url": "https://project.com/",
+      "url": "https://thelastjpg.itch.io/cellattack",
       "github" : ""
     },
     {
+      "name": "BioBikes",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Bio-Bikes is a project that utilizes Python, Tkinter for the UI, OpenCV and Mediapipe's pose detection models to optimize performance and prevent injuries in cyclists.",
+      "image" : "projects_images/bikes.png",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "tags":[
+        "Python",
+        "Computer Vision",
+        "Desktop",
+        "Tkinter"
+      ],
+      "url": "",
+      "github" : "https://github.com/juanpsama/bio-bikes"
+
+    },
+    {
+      "name": "Maze of Bullets",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Maze of Bullet is a small yet intense game that places you, a tiny square, within the confines of a treacherous maze. Showcases my skills in game and programing logic",
+      "image" : "projects_images/maze.png",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "tags":[
+        "C#",
+        "Unity",
+        "Bullet Hell"
+      ],
+      "url": "https://kleyma.itch.io/maze-of-bullets",
+      "github" : ""
 
     }
+    
     ]
   }

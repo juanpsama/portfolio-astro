@@ -3,33 +3,44 @@ import { Icon } from 'astro-icon/components'
 interface Props {
 	title: string;
 	image: string;
-    description ?: string;
+  github:string;
+  url : string;
+  description ?: string;
+  tags ?: Array<String>;
 }
-const { image, title, description} = Astro.props;
+const { image, title, 
+      description, tags,
+       github, url} = Astro.props;
 ---
+<div class="relative rounded-lg shadow-xl shadow-cyan-900 bg-stone-50 text-indigo">
 
-<div class="rounded-lg shadow-lg bg-stone-50 text-indigo mx-2 ">
     <img class="w-full rounded-t-lg" src={image} alt="Project image">
-    <div class="px-6 py-4">
+    
+    <div class="px-6 py-4 mb-10" >
       <div class="font-bold text-xl mb-2">{title}</div>
 
-      <div class="rounded-full bg-cyan-900 inline-block px-2 py-0.5 text-stone-50 text-xs">Python</div>
-      <div class="rounded-full bg-cyan-900 inline-block px-2 py-0.5 text-stone-50 text-xs">Python</div>
+      {tags.map(tag => (
+        <div class="rounded-full bg-cyan-900 inline-block mx-1 px-2 py-0.5 text-stone-50 text-xs">{tag}</div>
+      ))}
 
       <p class="text-grey-darker text-base leading-normal">{description}</p>
     </div>
 
-    <div class="px-6 py-4 flex justify-center align-bottom ">
+    <div class="absolute inset-x-0 bottom-0 px-6 py-4 flex justify-center items-end">
 
-        <a class="bg-cyan-900 hover:bg-cyan-950 text-stone-50 font-bold rounded-full mx-2">
+        { url !== '' &&
+        <a class="bg-cyan-900 hover:bg-cyan-950 text-stone-50 font-bold rounded-full mx-2" href={url}>
             <Icon name="mdi:play" class="text-4xl"/>  
         </a>
+        }
 
-        <a class="bg-cyan-900 hover:bg-cyan-950 text-stone-50 font-bold rounded-full mx-2">
+        { github !== '' &&
+        <a class="bg-cyan-900 hover:bg-cyan-950 text-stone-50 font-bold rounded-full mx-2" href={github}>
           <Icon name="mdi:github" class="text-4xl " />
         </a>
-        
+        }
 
     </div>
+
   </div>
   
