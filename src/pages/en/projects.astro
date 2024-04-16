@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import TealBox from '../../components/TealBox.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
-import {projects} from '../../../cv.json'
+import {projects} from '../../../projects.json'
 ---
 
 
@@ -12,7 +12,7 @@ import {projects} from '../../../cv.json'
             
             {projects.map(project => (
                 <ProjectCard image={project.image} title={project.name} tags = {project.tags}
-                 description={project.description} github={project.github} url = {project.url}/>
+                 description={project.description.en} github={project.github} url = {project.url}/>
             ))}
               
         </div>

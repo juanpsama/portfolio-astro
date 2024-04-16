@@ -1,16 +1,27 @@
 ---
 import { languages} from '../i18n/ui';
 import { useTranslatedPath, getLangFromUrl } from '@/i18n/utils';
-
+import { Icon } from 'astro-icon/components';
 
 const lang = getLangFromUrl(Astro.url);
-const translatePath = useTranslatedPath(lang);
----
+const toogleLang = lang == 'es' ? 'en' : 'es'
 
-<ul>
-  {Object.entries(languages).map(([lang, label]) => (
-    <li>
-      <a href={translatePath('/', lang)}>{label}</a>
-    </li>
-  ))}
-</ul>
+var fullPath = Astro.url.pathname
+var path = lang == 'en' ? fullPath.substring(3) : fullPath
+
+const translatePath = useTranslatedPath(toogleLang);
+---
+<div class="m-5 inline-flex">
+
+        <a href={translatePath(path)} class="inline-flex text-indigo hover:text-black">
+            <Icon name="language" class="text-4xl" />
+            <span class="font-bold font-mono">{lang}</span>
+        </a>
+        <!-- <ul>
+            {Object.entries(languages).map(([lang, label]) => (
+            <li>
+                <a href={translatePath('/', lang)}>{label}</a>
+            </li>
+            ))}
+        </ul> -->
+</div>

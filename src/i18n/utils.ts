@@ -17,3 +17,4 @@ export function useTranslatedPath(lang: keyof typeof ui) {
       return !showDefaultLang && l === defaultLang ? path : `/${l}${path}`
     }
 }
+

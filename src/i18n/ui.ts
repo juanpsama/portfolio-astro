@@ -15,8 +15,8 @@ export const languages = {
     },
     en: {
         'subtitle': "Developer",
-        'nav.home': 'Home',
+        'nav.home': 'About me',
         'nav.projects': 'Projects',
         'nav.contact' : 'Contact me '
-    },
+    },  
   } as const;
