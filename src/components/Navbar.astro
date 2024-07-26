@@ -2,13 +2,17 @@
 ---
 import { Image } from "astro:assets"
 import ProfileImage from '../../public/face.jpg';
-import { getLangFromUrl, useTranslatedPath, useTranslations} from '../i18n/utils';
+import { getLangFromUrl, useTranslatedPath, useTranslations} from '../i18n/utils';1
 import LanguagePicker from "./LanguagePicker.astro";
 
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+function useBasePath(path){
+    return `${import.meta.env.BASE_URL}${translatePath(path)}`;
+}
 ---
 <nav>
         <div class="flex flex-col md:flex-row justify-center items-center">
@@ -26,9 +30,9 @@ const translatePath = useTranslatedPath(lang);
                 </span>
         
                 <div class="inline-flex text-neutral-500 ">
-                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300 " aria-current="page" href={translatePath('/')}>{t('nav.home')}</a>
-                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={translatePath('/projects/')}>{t('nav.projects')}</a>
-                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={translatePath('/contact/')} >{t('nav.contact')}</a>
+                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300 " aria-current="page" href={useBasePath('/')}>{t('nav.home')}</a>
+                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={useBasePath('/projects/')}>{t('nav.projects')}</a>
+                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={useBasePath('/contact/')} >{t('nav.contact')}</a>
                 </div>
         
             </div>
