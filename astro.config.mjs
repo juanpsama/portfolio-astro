@@ -6,5 +6,6 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), icon()],
-  site: 'https://juanpsama.github.io'
+  site: 'https://juanpsama.github.io',
+  base: '/portfolio-astro',
 });
