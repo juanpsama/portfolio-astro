@@ -1,30 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
 import TealBox from '../components/TealBox.astro';
+import cvData from '../../cv.json';
+
+const { basics, work } = cvData.es;
+
+function formatDate(dateStr: string | null): string {
+  if (!dateStr) return 'Actualidad';
+  const [year, month] = dateStr.split('-');
+  const date = new Date(Number(year), Number(month) - 1);
+  return date.toLocaleDateString('es-MX', { year: 'numeric', month: 'short' });
+}
 ---
 
-<Layout title="Juan P. | Developer">
+<Layout title="Juan P. | Inicio">
 	<main>
 	<TealBox>
-		<h2>Hola! 👋</h2>
-		<p> Soy un ingeniero con habilidades en Python, Flask y JavaScript para desarrollo web. Soy un aprendiz autodidacta comprometido con un gran interés en aprender nuevas tecnologías. Tengo experiencia generando aplicaciones desde el backend usando tecnologías como Python y frameworks web como Django y Flask, así como desarrollando API REST. También tengo experiencia programando interfaces web y aplicaciones usando frameworks de frontend como Flutter y React. Me esfuerzo constantemente por mejorar y ampliar mis conocimientos en el ámbito tecnológico. Mi capacidad para adaptarme a nuevos lenguajes y herramientas me permite enfrentar desafíos complejos y contribuir de manera efectiva a proyectos innovadores
-		</p>
 
-		<br>
-		<hr class="border-t-2 border-dashed border-yellow-200 bg-transparent h-0.5" />
-		<br>
+		<h2 class="text-xl font-semibold mt-6 mb-3">Sobre mí</h2>
+		<p>{basics.summary}</p>
 
-		<h5>Habilidades</h5>
+		<hr class="border-t-2 border-dashed border-yellow-200 bg-transparent h-0.5 my-6" />
 
-		<br>
-		<hr class="border-t-2 border-dashed border-yellow-200 bg-transparent h-0.5" />
-		<br>
-		
-		<h5>Educacion</h5>
-	</TealBox>	
+		<h2 class="text-xl font-semibold mb-4">Experiencia</h2>
+		{work.map(job => (
+			<div class="mb-6">
+				<div class="flex flex-wrap justify-between items-start gap-2">
+					<div>
+						<h3 class="text-lg font-bold">{job.name}</h3>
+						<p class="text-yellow-200">{job.position}</p>
+						<p class="text-sm opacity-80">{job.location}</p>
+					</div>
+					<p class="text-sm opacity-80">{formatDate(job.startDate)} — {formatDate(job.endDate)}</p>
+				</div>
+				<ul class="list-disc list-inside mt-2 space-y-1 text-sm">
+					{job.highlights.map(h => <li>{h}</li>)}
+				</ul>
+			</div>
+		))}
+	</TealBox>
 	</main>
-
 </Layout>
 
 <style>

@@ -1,91 +1,125 @@
-{
+﻿{
+  "es": {
     "basics": {
       "name": "Juan P. Samayoa",
-      "label": "Engineer",
+      "label": "Ingeniero de Software",
       "image": "/face.jpg",
       "email": "samajpablo@gmail.com",
       "phone": "+52 961 251-9488",
-      "url": "",
-      "summary": "A summary of John Doe…",
+      "summary": "Ingeniero con experiencia en el desarrollo de soluciones backend y frontend, especializado en Python y frameworks como Django, Flask y Odoo. Tengo experiencia en el levantamiento de requerimientos funcionales, diseño de soluciones escalables y optimización de procesos empresariales. Me adapto rápidamente a nuevas tecnologías y metodologías, con interés en fortalecer mis habilidades en ecosistemas Java (Java, Spring). También cuento con experiencia en frontend con Flutter, React y Astro.",
       "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
+        "city": "Tuxtla Gutiérrez",
+        "countryCode": "MX",
+        "region": "Chiapas"
       },
-      
       "profiles": [
         {
-            "network": "Linkedin",
-            "username": "john",
-            "url": "www.linkedin.com/in/juanpsama"
+          "network": "LinkedIn",
+          "username": "juanpsama",
+          "url": "https://www.linkedin.com/in/juanpsama"
         },
         {
-            "network": "Instagram",
-            "username": "john",
-            "url": "https://www.instagram.com/juanp_sama/"
+          "network": "Instagram",
+          "username": "juanp_sama",
+          "url": "https://www.instagram.com/juanp_sama/"
         },
         {
-            "network": "Github",
-            "username": "john",
-            "url": "https://github.com/juanpsama"
-        }]
+          "network": "GitHub",
+          "username": "juanpsama",
+          "url": "https://github.com/juanpsama"
+        }
+      ]
     },
-    "work": [{
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Started the company"
+    "work": [
+      {
+        "name": "Tranlisur",
+        "position": "Ingeniero de Software",
+        "location": "Tuxtla Gutiérrez, Chiapas",
+        "startDate": "2024-01-01",
+        "endDate": null,
+        "highlights": [
+          "Desarrollo y mantenimiento del ERP empresarial utilizando Odoo y Python, implementando módulos personalizados bajo buenas prácticas de arquitectura.",
+          "Administración de bases de datos y despliegues en entornos de producción, garantizando estabilidad y rendimiento del sistema.",
+          "Levantamiento de requerimientos con distintas áreas operativas para diseñar soluciones que optimicen procesos logísticos y administrativos.",
+          "Acompañamiento técnico a usuarios finales, asegurando la correcta adopción de las herramientas implementadas.",
+          "Desarrollo móvil e IoT para automatización de asistencias y procesos operativos de la empresa, incluyendo integración con Odoo."
+        ]
+      },
+      {
+        "name": "Innovative Software Services",
+        "position": "Ingeniero de Software",
+        "location": "Tuxtla Gutiérrez, Chiapas",
+        "startDate": "2024-04-01",
+        "endDate": "2024-12-01",
+        "highlights": [
+          "Desarrollo de funcionalidades backend mediante Python y Flask, creando APIs REST robustas y escalables.",
+          "Apoyo en el desarrollo frontend con Flutter, asegurando una integración eficiente entre la interfaz de usuario y el backend.",
+          "Participación en proyectos web utilizando tecnologías modernas como React y Astro."
+        ]
+      }
+    ]
+  },
+  "en": {
+    "basics": {
+      "name": "Juan P. Samayoa",
+      "label": "Software Engineer",
+      "image": "/face.jpg",
+      "email": "samajpablo@gmail.com",
+      "phone": "+52 961 251-9488",
+      "summary": "Engineer with experience in backend and frontend solutions development, specialized in Python and frameworks such as Django, Flask, and Odoo. I have experience in gathering functional requirements, designing scalable solutions, and optimizing business processes. I quickly adapt to new technologies and methodologies, with an interest in strengthening my skills in Java ecosystems (Java, Spring). I also have frontend experience with Flutter, React, and Astro.",
+      "location": {
+        "city": "Tuxtla Gutiérrez",
+        "countryCode": "MX",
+        "region": "Chiapas"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "juanpsama",
+          "url": "https://www.linkedin.com/in/juanpsama"
+        },
+        {
+          "network": "Instagram",
+          "username": "juanp_sama",
+          "url": "https://www.instagram.com/juanp_sama/"
+        },
+        {
+          "network": "GitHub",
+          "username": "juanpsama",
+          "url": "https://github.com/juanpsama"
+        }
       ]
-    }],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
-    "education": [{
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
-    }],
-    "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
-    "skills": [{
+    },
+    "work": [
+      {
+        "name": "Tranlisur",
+        "position": "Software Engineer",
+        "location": "Tuxtla Gutiérrez, Chiapas",
+        "startDate": "2024-01-01",
+        "endDate": null,
+        "highlights": [
+          "Developed and maintained the company ERP using Odoo and Python, implementing custom modules following architecture best practices.",
+          "Managed databases and production deployments, ensuring system stability and performance.",
+          "Gathered requirements from different operational areas to design solutions optimizing logistics and administrative processes.",
+          "Provided technical support to end users, ensuring proper adoption of implemented tools.",
+          "Mobile and IoT development for automating attendance and operational processes, including Odoo integration."
+        ]
+      },
+      {
+        "name": "Innovative Software Services",
+        "position": "Software Engineer",
+        "location": "Tuxtla Gutiérrez, Chiapas",
+        "startDate": "2024-04-01",
+        "endDate": "2024-12-01",
+        "highlights": [
+          "Developed backend features using Python and Flask, creating robust and scalable REST APIs.",
+          "Supported frontend development with Flutter, ensuring efficient integration between the UI and backend.",
+          "Participated in web projects using modern technologies such as React and Astro."
+        ]
+      }
+    ]
+  },
+   "skills": [{
       "name": "Web Development",
       "level": "Master",
       "keywords": [
@@ -104,101 +138,5 @@
         "Ferrets",
         "Unicorns"
       ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
-    }],
-    "projects": [
-    {
-      "name": "Document Manager",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Web app to manage documents, upload files, aply filters, you can manage users, roles and permissions of each one. <br/>Try It* Credentials to test:<br/> mail: <strong>viewer@mail.com</strong> password: <strong>viewer</strong>",
-      "image" : "/projects_images/document_manager.png",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "tags":[
-        "Python",
-        "Flask",
-        "Web"
-      ],
-      "url": "https://flask-blog-om2x.onrender.com/login",
-      "github" : "https://github.com/juanpsama/Document-Manager-Flask"
-
-    },
-    {
-      "name": "Paint By Numbers",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Web app that segments an image and assign numbers to each color to paint it by hand. Make an Special gift and become an artist yourself.",
-      "image" : "/projects_images/paint_by_numbers.png",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "tags":[
-        "Flask",
-        "Image Processing"
-      ],
-      "url": "https://paintbynumbers.onrender.com",
-      "github" : ""
-
-    },
-    {
-      "name": "CellAttack", 
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "CellAttack is an exciting video game crafted with Unity using C#. Dive into the microscopic world where you take on the role of a bacterium trying to survive the onslaught of formidable bacteriophages ",
-      "image" : "/projects_images/cellattack.gif",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "tags":[
-        "C#",
-        "Unity",
-        "Game Dev"
-      ],
-      "url": "https://thelastjpg.itch.io/cellattack",
-      "github" : ""
-    },
-    {
-      "name": "BioBikes",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Bio-Bikes is a project that utilizes Python, Tkinter for the UI, OpenCV and Mediapipe's pose detection models to optimize performance and prevent injuries in cyclists.",
-      "image" : "/projects_images/bikes.png",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "tags":[
-        "Python",
-        "Computer Vision",
-        "Desktop",
-        "Tkinter"
-      ],
-      "url": "",
-      "github" : "https://github.com/juanpsama/bio-bikes"
-
-    },
-    {
-      "name": "Maze of Bullets",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Maze of Bullet is a small yet intense game that places you, a tiny square, within the confines of a treacherous maze. Showcases my skills in game and programing logic",
-      "image" : "/projects_images/maze.png",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "tags":[
-        "C#",
-        "Unity",
-        "Bullet Hell"
-      ],
-      "url": "https://kleyma.itch.io/maze-of-bullets",
-      "github" : ""
-
-    }
-    
-    ]
-  }
+    }]
+}
