@@ -1,0 +1,69 @@
+:root {
+	/* CSS HEX */
+	--indigo-dye: #053c5eff;
+	--red: #db222aff;
+	--teal: #1f7a8cff;
+	--madder: #a31621ff;
+	--columbia-blue: #bfdbf7ff;
+	--brigth-pink: #F56476ff;
+	--teal: #1f7a8cff;
+	--accent: 136, 58, 234;
+	--accent-light: 224, 204, 250;
+	--accent-dark: 49, 10, 101;
+	--accent-gradient: linear-gradient(
+		45deg,
+		rgb(var(--accent)),
+		rgb(var(--accent-light)) 30%,
+		white 60%
+	);
+}
+html {
+	font-family: 'Roboto Mono', system-ui, sans-serif;
+	background: whitesmoke;
+	background-size: 224px;
+}
+h1 {
+	font-size: 4.25rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+}
+h2 { 
+	font-size: 2.25rem; 
+}
+
+h5 { 
+	font-size: 1.75rem; 
+}
+
+p { font-size: 1.125rem; }
+
+.bg-indigo{
+	background-color: var(--indigo-dye);
+}
+.bg-madder{
+	background-color: var(--madder);
+}
+.bg-pink{
+	background-color: var(--brigth-pink);
+}
+.text-indigo{
+	color: var(--indigo-dye);
+}
+.text-teal{
+	color: var(--teal);
+}
+.text-shadow-teal{
+	text-shadow: 0px 0px 3px var(--teal);  
+}
+code {
+	font-family:
+		Menlo,
+		Monaco,
+		Lucida Console,
+		Liberation Mono,
+		DejaVu Sans Mono,
+		Bitstream Vera Sans Mono,
+		Courier New,
+		monospace;
+}
