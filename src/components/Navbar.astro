@@ -10,7 +10,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
-function useBasePath(path){
+function useBasePath(path:string){
     return `${import.meta.env.BASE_URL}${translatePath(path)}`;
 }
 ---

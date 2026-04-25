@@ -12,11 +12,11 @@ var path = lang == 'en' ? fullPath.substring(3 + basePath.length) : fullPath.sub
 
 const translatePath = useTranslatedPath(toogleLang);
 
-function useBasePath(path){
+function useBasePath(path:string){
     return `${basePath}${translatePath(path)}`;
 }
 ---
-<div class="m-5 inline-flex">
+<div class="inline-flex">
 
         <a href={useBasePath(path)} class="inline-flex text-indigo hover:text-black">
             <Icon name="language" class="text-4xl" />

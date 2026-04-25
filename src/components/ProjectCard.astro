@@ -21,7 +21,7 @@ const { image, title,
     <div class="px-6 py-4 mb-10" >
       <div class="font-bold text-xl mb-2">{title}</div>
 
-      {tags.map(tag => (
+      {tags && tags.map(tag => (
         <div class="rounded-full bg-cyan-900 inline-block mx-1 px-2 py-0.5 text-stone-50 text-xs">{tag}</div>
       ))}
 
