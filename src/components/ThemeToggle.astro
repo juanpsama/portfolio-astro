@@ -1,0 +1,43 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="m-5 inline-flex">
+  <button 
+    id="theme-toggle" 
+    class="inline-flex text-indigo hover:text-black transition-colors"
+    title="Toggle dark/light mode"
+    aria-label="Toggle theme"
+  >
+    <Icon name="dark" class="text-4xl theme-icon-light " />
+    <Icon name="ligth" class="text-4xl theme-icon-dark text-white" />
+  </button>
+</div>
+
+<style>
+  html[data-theme="dark"] .theme-icon-light {
+    display: none;
+  }
+  
+  html:not([data-theme="dark"]) .theme-icon-light {
+      display: block !important;
+  }
+
+  html[data-theme="dark"] .theme-icon-dark {
+    display: block !important;
+  }
+
+  html:not([data-theme="dark"]) .theme-icon-dark {
+      display: none;
+  }
+
+</style>
+
+<script>
+  import { toggleTheme } from '@/scripts/theme';
+  
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
+</script>

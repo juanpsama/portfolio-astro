@@ -16,11 +16,30 @@
 		rgb(var(--accent-light)) 30%,
 		white 60%
 	);
+	
+	/* Light mode colors */
+	--bg-primary: whitesmoke;
+	--text-primary: #1f2937;
+	--text-secondary: #6b7280;
+	--navbar-text: #737373;
+	--navbar-hover: #404040;
 }
+
+html[data-theme="dark"] {
+	/* Dark mode colors */
+	--bg-primary: #1a1a1a;
+	--text-primary: #f3f4f6;
+	--text-secondary: #d1d5db;
+	--navbar-text: #a3a3a3;
+	--navbar-hover: #d4d4d4;
+}
+
 html {
 	font-family: 'Roboto Mono', system-ui, sans-serif;
-	background: whitesmoke;
+	background: var(--bg-primary);
 	background-size: 224px;
+	color: var(--text-primary);
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 h1 {
 	font-size: 4.25rem;
@@ -56,6 +75,9 @@ p { font-size: 1.125rem; }
 .text-shadow-teal{
 	text-shadow: 0px 0px 3px var(--teal);  
 }
+.theme-icon-dark svg {
+    color: white;
+}
 code {
 	font-family:
 		Menlo,
@@ -66,4 +88,13 @@ code {
 		Bitstream Vera Sans Mono,
 		Courier New,
 		monospace;
+}
+
+/* Dark mode specific adjustments */
+html[data-theme="dark"] .text-neutral-500 {
+	color: var(--navbar-text);
+}
+
+html[data-theme="dark"] .text-neutral-500 a:hover {
+	color: var(--navbar-hover);
 }
