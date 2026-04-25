@@ -2,7 +2,7 @@
 ---
 import { Image } from "astro:assets"
 import ProfileImage from '../../public/face.jpg';
-import { getLangFromUrl, useTranslatedPath, useTranslations} from '../i18n/utils';1
+import { getLangFromUrl, useTranslatedPath, useTranslations} from '../i18n/utils';
 import LanguagePicker from "./LanguagePicker.astro";
 
 
@@ -24,15 +24,15 @@ function useBasePath(path:string){
     
             <div class="block px-10">
                 <span>
-                    <h2 class="text-teal text-shadow-teal" ><b>Juan .P Samayoa</b></h2>
-                    <h5 class="mx-3 text-shadow-teal text-indigo">{t('subtitle')}</h5>
+                    <h2 class="text-primary text-primary-glow" ><b>Juan .P Samayoa</b></h2>
+                    <h5 class="mx-3 text-primary text-primary-glow">{t('subtitle')}</h5>
 
                 </span>
         
-                <div class="inline-flex text-neutral-500 ">
-                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300 " aria-current="page" href={useBasePath('/')}>{t('nav.home')}</a>
-                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={useBasePath('/projects/')}>{t('nav.projects')}</a>
-                    <a class="mx-3 hover:text-neutral-700 hover:underline decoration-2 decoration-pink-300" href={useBasePath('/contact/')} >{t('nav.contact')}</a>
+                <div class="inline-flex text-secondary ">
+                    <a class="mx-3 hover:text-primary hover:underline decoration-2 decoration-primary" aria-current="page" href={useBasePath('/')}>{t('nav.home')}</a>
+                    <a class="mx-3 hover:text-primary hover:underline decoration-2 decoration-primary" href={useBasePath('/projects/')}>{t('nav.projects')}</a>
+                    <a class="mx-3 hover:text-primary hover:underline decoration-2 decoration-primary" href={useBasePath('/contact/')} >{t('nav.contact')}</a>
                 </div>
         
             </div>
