@@ -2,7 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import TealBox from '../components/TealBox.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-import {projects} from '../../projects.json'
+import cvData from '../../cv.json';
+
+const { projects } = cvData;
 ---
 
 
@@ -11,8 +13,8 @@ import {projects} from '../../projects.json'
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex justify-center">
             
             {projects.map(project => (
-                <ProjectCard image={project.image} title={project.name} tags = {project.tags}
-                 description={project.description.es} github={project.github} url = {project.url}/>
+                <ProjectCard image={project.image} title={project.name} tags={project.tags}
+                 description={project.description.es} github={project.github} url={project.url}/>
             ))}
               
         </div>

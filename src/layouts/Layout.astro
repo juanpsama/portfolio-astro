@@ -4,9 +4,10 @@ import { getLangFromUrl } from '../i18n/utils';
 import Navbar from '@/components/Navbar.astro';
 import LinkFooter from '@/components/LinkFooter.astro';
 import LanguagePicker from '@/components/LanguagePicker.astro';
+import ThemeToggle from '@/components/ThemeToggle.astro';
 
 import "../styles/global.css";
-
+import Icon from 'node_modules/astro-icon/components/Icon.astro';
 
 
 interface Props {
@@ -28,9 +29,14 @@ const lang = getLangFromUrl(Astro.url);
 		<link rel="icon" type="image/svg+xml" href="/portfolio-astro/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script is:inline>
+			const savedTheme = localStorage.getItem('theme');
+			if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+		</script>
 	</head>
 	<body>
 		
+		<ThemeToggle/>
 		<LanguagePicker/>
 		<Navbar/>
 		<slot />
