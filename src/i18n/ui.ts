@@ -8,13 +8,13 @@ export const languages = {
   
   export const ui = {
     es: {
-        'subtitle': "Ingeniero",
+        'subtitle': "Desarrollador de software",
         'nav.home': 'Inicio',
         'nav.projects': 'Proyectos',
         'nav.contact' : 'Contacto'
     },
     en: {
-        'subtitle': "Developer",
+        'subtitle': "Software Developer",
         'nav.home': 'About me',
         'nav.projects': 'Projects',
         'nav.contact' : 'Contact me '
