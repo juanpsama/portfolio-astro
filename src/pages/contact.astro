@@ -23,7 +23,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="mb-3 columns-1 required">
         <label class="form-label" for="name">Nombre</label>
         <input
-          class="rounded-lg block w-full"
+          class="rounded-lg block w-full text-black"
           id="name"
           name="name"
           required=""
@@ -35,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="mb-3 required">
         <label class="form-label" for="email">Email</label>
         <input
-          class="rounded-lg block w-full"
+          class="rounded-lg block w-full text-black"
           id="email"
           name="email"
           required=""
@@ -47,7 +47,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="mb-3">
         <label class="form-label" for="phone">Telefono</label>
         <input
-          class="rounded-lg block w-full"
+          class="rounded-lg block w-full text-black"
           id="phone"
           name="phone"
           type="text"
@@ -57,13 +57,15 @@ import Layout from "../layouts/Layout.astro";
 
       <div class="mb-3 required">
         <label class="form-label" for="message">Mensaje</label>
-        <textarea class="rounded-lg block w-full" 
+        <textarea class="rounded-lg block w-full text-black" 
         id="message" name="message" required="true"/>
       </div>
 
-      <button type="submit" class="btn-primary py-2 px-4 rounded-lg">
-          Enviar
-      </button>
+      <!-- <div class="flex justify-end">
+      </div> -->
+        <button type="submit" class="btn-primary py-2 px-4 rounded-lg">
+            Enviar Mensaje
+        </button>
     </form>
     
   </TealBox>
