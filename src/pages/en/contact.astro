@@ -19,51 +19,52 @@ import Layout from "../../layouts/Layout.astro";
         </div>
     
     <h2 class="my-5">Send me a message</h2>
-    <div class="mb-3 columns-1 required">
-      <label class="form-label" for="name">Your name</label>
-      <input
-        class="rounded-lg block w-full"
-        id="name"
-        name="name"
-        required=""
-        type="text"
-        value=""
-      />
-    </div>
+    <form target="_blank" action="https://formsubmit.co/samajpablo@gmail.com" method="POST">
+      <div class="mb-3 columns-1 required">
+        <label class="form-label" for="name">Your name</label>
+        <input
+          class="rounded-lg block w-full"
+          id="name"
+          name="name"
+          required="true"
+          type="text"
+          value=""
+        />
+      </div>
 
-    <div class="mb-3 required">
-      <label class="form-label" for="email">Your email</label>
-      <input
-        class="rounded-lg block w-full"
-        id="email"
-        name="email"
-        required=""
-        type="text"
-        value=""
-      />
-    </div>
+      <div class="mb-3 required">
+        <label class="form-label" for="email">Your email</label>
+        <input
+          class="rounded-lg block w-full"
+          id="email"
+          name="email"
+          required=""
+          type="email"
+          value=""
+        />
+      </div>
 
-    <div class="mb-3">
-      <label class="form-label" for="phone">Phone</label>
-      <input
-        class="rounded-lg block w-full"
-        id="phone"
-        name="phone"
-        type="text"
-        value=""
-      />
-    </div>
+      <div class="mb-3">
+        <label class="form-label" for="phone">Phone</label>
+        <input
+          class="rounded-lg block w-full"
+          id="phone"
+          name="phone"
+          type="text"
+          value=""
+        />
+      </div>
 
-    <div class="mb-3 required">
-      <label class="form-label" for="message">Message</label>
-      <textarea class="rounded-lg block w-full" 
-      id="message" name="message" required="">
-      </textarea>
-    </div>
+      <div class="mb-3 required">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="rounded-lg block w-full" 
+        id="message" name="message" required="true"/>
+      </div>
 
-    <button class="btn-primary py-2 px-4 rounded-lg">
-        Send Message
-      </button>
+      <button type="submit" class="btn-primary py-2 px-4 rounded-lg">
+          Send Message
+        </button>
+    </form>
     
     
   </TealBox>
