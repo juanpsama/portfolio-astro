@@ -8,22 +8,44 @@ export const languages = {
   
   export const ui = {
     es: {
-        "title": "Juan P. | Inicio",
         "subtitle": "Desarrollador de software",
-        "experience" : "Experiencia",
-        "aboutMe":"Sobre mí",
-        "present": "Actualidad",
+
+        "index.title": "Juan P. | Inicio",
+        "index.experience" : "Experiencia",
+        "index.aboutMe":"Sobre mí",
+        "index.present": "Actualidad",
+
+        "projects.title": "Juan P. | Proyectos",
+
+        "contact.title": "Juan P. | Contacto",
+        "contact.sendMessage": "Contactame",
+        "contact.name": "Nombre",
+        "contact.email": "Email",
+        "contact.phone": "Telefono",
+        "contact.message": "Mensaje",
+        "contact.send": "Enviar Mensaje",
 
         'nav.home': 'Inicio',
         'nav.projects': 'Proyectos',
         'nav.contact' : 'Contacto'
     },
     en: {
-        "title": "Juan P. | About",
         "subtitle": "Software Developer",
-        "experience" : "Experience",
-        "aboutMe":"About me",
-        "present": "Present",
+
+        "index.title": "Juan P. | About",
+        "index.experience" : "Experience",
+        "index.aboutMe":"About me",
+        "index.present": "Present",
+
+        "projects.title": "Juan P. | Projects",
+
+        "contact.title": "Juan P. | Contact",
+        "contact.sendMessage": "Send me a message",
+        "contact.name": "Your name",
+        "contact.email": "Your email",
+        "contact.phone": "Phone",
+        "contact.message": "Message",
+        "contact.send": "Send Message",
 
         'nav.home': 'About me',
         'nav.projects': 'Projects',

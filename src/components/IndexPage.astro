@@ -3,32 +3,31 @@ import Layout from '../layouts/Layout.astro';
 import TealBox from '../components/TealBox.astro';
 import { ui } from '../i18n/ui';
 import cvData from '../../cv.json';
+import { getLangFromUrl, useTranslatedPath, useTranslations} from '../i18n/utils';
 
-export interface Props {
-  lang: 'es' | 'en';
-}
+const lang = getLangFromUrl(Astro.url);
+// const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-const { lang } = Astro.props;
-const t = ui[lang];
 const { basics, work } = cvData[lang];
 
 function formatDate(dateStr: string | null): string {
-  if (!dateStr) return t.present;
+  if (!dateStr) return t("index.present");
   const [year, month] = dateStr.split('-');
   const date = new Date(Number(year), Number(month) - 1);
   return date.toLocaleDateString(lang === 'es' ? 'es-MX' : 'en-US', { year: 'numeric', month: 'short' });
 }
 ---
 
-<Layout title={t.title}>
+<Layout title={t("index.title")}>
   <main>
     <TealBox>
-      <h2 class="text-xl font-semibold mt-6 mb-3">{t.aboutMe}</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">{t('index.aboutMe')}</h2>
       <p>{basics.summary}</p>
 
       <hr class="border-t-2 border-dashed border-primary bg-transparent h-0.5 my-6" />
 
-      <h2 class="text-xl font-semibold mb-4">{t.experience}</h2>
+      <h2 class="text-xl font-semibold mb-4">{t('index.experience')}</h2>
       {work.map(job => (
         <div class="mb-6">
           <div class="flex flex-wrap justify-between items-start gap-2">
