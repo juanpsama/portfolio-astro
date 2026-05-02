@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TealBox from '../components/TealBox.astro';
+import { ui } from '../i18n/ui';
+import cvData from '../../cv.json';
+
+export interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const { basics, work } = cvData[lang];
+
+function formatDate(dateStr: string | null): string {
+  if (!dateStr) return t.present;
+  const [year, month] = dateStr.split('-');
+  const date = new Date(Number(year), Number(month) - 1);
+  return date.toLocaleDateString(lang === 'es' ? 'es-MX' : 'en-US', { year: 'numeric', month: 'short' });
+}
+---
+
+<Layout title={t.title}>
+  <main>
+    <TealBox>
+      <h2 class="text-xl font-semibold mt-6 mb-3">{t.aboutMe}</h2>
+      <p>{basics.summary}</p>
+
+      <hr class="border-t-2 border-dashed border-primary bg-transparent h-0.5 my-6" />
+
+      <h2 class="text-xl font-semibold mb-4">{t.experience}</h2>
+      {work.map(job => (
+        <div class="mb-6">
+          <div class="flex flex-wrap justify-between items-start gap-2">
+            <div>
+              <h3 class="text-lg font-bold">{job.name}</h3>
+              <p class="text-secondary">{job.position}</p>
+              <p class="text-sm opacity-80">{job.location}</p>
+            </div>
+            <p class="text-sm opacity-80">{formatDate(job.startDate)} — {formatDate(job.endDate)}</p>
+          </div>
+          <ul class="list-disc list-inside mt-2 space-y-1 text-sm">
+            {job.highlights.map(h => <li>{h}</li>)}
+          </ul>
+        </div>
+      ))}
+    </TealBox>
+  </main>
+</Layout>

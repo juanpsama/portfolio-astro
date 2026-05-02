@@ -1,5 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import IndexPage from '../../components/IndexPage.astro';
 import TealBox from '../../components/TealBox.astro';
 import cvData from '../../../cv.json';
 
@@ -13,33 +13,7 @@ function formatDate(dateStr: string | null): string {
 }
 ---
 
-<Layout title="Juan P. | About">
-	<main>
-	<TealBox>
-		<h2 class="text-xl font-semibold mt-6 mb-3">About me</h2>
-		<p>{basics.summary}</p>
-
-		<hr class="border-t-2 border-dashed border-primary bg-transparent h-0.5 my-6" />
-
-		<h2 class="text-xl font-semibold mb-4">Experience</h2>
-		{work.map(job => (
-			<div class="mb-6">
-				<div class="flex flex-wrap justify-between items-start gap-2">
-					<div>
-						<h3 class="text-lg font-bold">{job.name}</h3>
-						<p class="text-secondary">{job.position}</p>
-						<p class="text-sm opacity-80">{job.location}</p>
-					</div>
-					<p class="text-sm opacity-80">{formatDate(job.startDate)} — {formatDate(job.endDate)}</p>
-				</div>
-				<ul class="list-disc list-inside mt-2 space-y-1 text-sm">
-					{job.highlights.map(h => <li>{h}</li>)}
-				</ul>
-			</div>
-		))}
-	</TealBox>
-	</main>
-</Layout>
+<IndexPage lang="en" />
 
 <style>
 	/* main {
