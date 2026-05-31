@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TealBox from '../components/TealBox.astro';
+import { getLang, useTranslations } from '../i18n/utils';
+
+const lang = getLang(Astro.currentLocale);
+const t = useTranslations(lang);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const homeUrl = `${base}/es/`;
+---
+
+<Layout title={t('notFound.title')}>
+  <main>
+    <TealBox>
+      <div class="text-center">
+        <h1 class="text-8xl font-bold text-primary mb-4">404</h1>
+        <h2 class="text-2xl font-semibold mb-3">{t('notFound.heading')}</h2>
+        <p class="text-secondary mb-6">{t('notFound.message')}</p>
+        <a
+          href={homeUrl}
+          class="inline-block btn-primary font-semibold rounded-full py-2 px-6 no-underline"
+        >
+          {t('notFound.home')}
+        </a>
+      </div>
+    </TealBox>
+  </main>
+</Layout>

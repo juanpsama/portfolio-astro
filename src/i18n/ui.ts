@@ -25,6 +25,11 @@ export const languages = {
         "contact.message": "Mensaje",
         "contact.send": "Enviar Mensaje",
 
+        "notFound.title": "Juan P. | No encontrado",
+        "notFound.heading": "Página no encontrada",
+        "notFound.message": "La página que buscas no existe o ha sido movida.",
+        "notFound.home": "Volver al inicio",
+
         'nav.home': 'Inicio',
         'nav.projects': 'Proyectos',
         'nav.contact' : 'Contacto'
@@ -47,8 +52,13 @@ export const languages = {
         "contact.message": "Message",
         "contact.send": "Send Message",
 
+        "notFound.title": "Juan P. | Not found",
+        "notFound.heading": "Page not found",
+        "notFound.message": "The page you are looking for does not exist or has been moved.",
+        "notFound.home": "Back to home",
+
         'nav.home': 'About me',
         'nav.projects': 'Projects',
         'nav.contact' : 'Contact me '
-    },  
+    },
   } as const;
