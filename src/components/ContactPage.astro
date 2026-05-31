@@ -2,13 +2,9 @@
 import { Icon } from "astro-icon/components";
 import TealBox from "../components/TealBox.astro";
 import Layout from "../layouts/Layout.astro";
-import { useTranslations } from "../i18n/utils";
+import { getLang, useTranslations } from "../i18n/utils";
 
-export interface Props {
-  lang: "es" | "en";
-}
-
-const { lang } = Astro.props;
+const lang = getLang(Astro.currentLocale);
 const t = useTranslations(lang);
 ---
 

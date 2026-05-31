@@ -1,0 +1,12 @@
+---
+import ProjectsPage from '../../components/ProjectsPage.astro';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'es' } },
+    { params: { locale: 'en' } },
+  ];
+}
+---
+
+<ProjectsPage />

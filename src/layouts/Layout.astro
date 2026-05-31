@@ -1,6 +1,5 @@
 ---
-import { getLangFromUrl } from '../i18n/utils';
-
+import { getLang } from '../i18n/utils';
 import Navbar from '@/components/Navbar.astro';
 import LinkFooter from '@/components/LinkFooter.astro';
 import LanguagePicker from '@/components/LanguagePicker.astro';
@@ -16,7 +15,7 @@ interface Props {
 
 const { title } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
+const lang = getLang(Astro.currentLocale);
 ---
 
 <!doctype html>
@@ -28,6 +27,9 @@ const lang = getLangFromUrl(Astro.url);
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
 		<link rel="icon" type="image/svg+xml" href="/portfolio-astro/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="alternate" hreflang="es" href={Astro.site!.origin + '/portfolio-astro/es/'} />
+		<link rel="alternate" hreflang="en" href={Astro.site!.origin + '/portfolio-astro/en/'} />
+		<link rel="alternate" hreflang="x-default" href={Astro.site!.origin + '/portfolio-astro/es/'} />
 		<title>{title}</title>
 		<script is:inline>
 			const savedTheme = localStorage.getItem('theme');

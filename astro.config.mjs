@@ -8,4 +8,10 @@ export default defineConfig({
   integrations: [tailwind(), icon()],
   site: 'https://juanpsama.github.io',
   base: '/portfolio-astro',
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'en'],
+    prefixDefaultLocale: true,
+    redirectToDefaultLocale: false,
+  },
 });

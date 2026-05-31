@@ -1,12 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import TealBox from '../components/TealBox.astro';
-import { ui } from '../i18n/ui';
 import cvData from '../../cv.json';
-import { getLangFromUrl, useTranslatedPath, useTranslations} from '../i18n/utils';
+import { getLang, useTranslations } from '../i18n/utils';
 
-const lang = getLangFromUrl(Astro.url);
-// const lang = getLangFromUrl(Astro.url);
+const lang = getLang(Astro.currentLocale);
 const t = useTranslations(lang);
 
 const { basics, work } = cvData[lang];
