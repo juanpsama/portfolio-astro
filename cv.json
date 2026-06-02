@@ -130,7 +130,7 @@
       },
       "image": "/projects_images/document_manager.png",
       "tags": ["Python", "Flask", "Web"],
-      "url": "https://flask-blog-om2x.onrender.com/login",
+      "url": "",
       "github": "https://github.com/juanpsama/Document-Manager-Flask"
     },
     {
@@ -143,7 +143,7 @@
       },
       "image": "/projects_images/paint_by_numbers.png",
       "tags": ["Flask", "Image Processing"],
-      "url": "https://paintbynumbers.onrender.com",
+      "url": "",
       "github": ""
     },
     {
