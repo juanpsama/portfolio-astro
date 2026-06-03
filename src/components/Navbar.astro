@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets"
-import ProfileImage from '../../public/face.jpg';
+// This file reference is also on the cv json, delete here or in the json as is redundant
+import ProfileImage from '../../public/face.webp';
 import { getLang, useTranslations } from '../i18n/utils';
 
 const lang = getLang(Astro.currentLocale);
