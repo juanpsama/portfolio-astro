@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import TealBox from '../components/TealBox.astro';
-import ProjectCard from '../components/ProjectCard.astro';
+import ProjectCard from '../components/ProjectCard';
 import { getLang, useTranslations } from '../i18n/utils';
 import cvData from '../../cv.json';
 
@@ -12,15 +12,17 @@ const { projects } = cvData;
 
 <Layout title={t('projects.title')}>
   <TealBox>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex justify-center">
       {projects.map(project => (
         <ProjectCard
-          image={project.image}
+          client:visible
+          images={project.images}
           title={project.name}
           tags={project.tags}
           description={lang === 'es' ? project.description.es : project.description.en}
           github={project.github}
           url={project.url}
+          baseUrl={import.meta.env.BASE_URL}
         />
       ))}
     </div>

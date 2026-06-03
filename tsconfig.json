@@ -2,12 +2,14 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "paths": {
-      "@cv":[
+      "@cv": [
         "./cv.json"
       ],
-      "@/*":[
+      "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   }
 }

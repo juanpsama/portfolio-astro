@@ -3,10 +3,10 @@
     "basics": {
       "name": "Juan P. Samayoa",
       "label": "Ingeniero de Software",
-      "image": "/face.jpg",
+      "image": "/face.webp",
       "email": "samajpablo@gmail.com",
       "phone": "+52 961 251-9488",
-      "summary": "Ingeniero con experiencia en el desarrollo de soluciones backend y frontend, especializado en Python y frameworks como Django, Flask y Odoo. Tengo experiencia en el levantamiento de requerimientos funcionales, diseño de soluciones escalables y optimización de procesos empresariales. Me adapto rápidamente a nuevas tecnologías y metodologías, con interés en fortalecer mis habilidades en ecosistemas Java (Java, Spring). También cuento con experiencia en frontend con Flutter, React y Astro.",
+      "summary": "Ingeniero con experiencia en el desarrollo de soluciones backend y frontend, especializado en Python y frameworks como Django, Flask y Odoo. Tengo experiencia en el levantamiento de requerimientos funcionales, diseño de soluciones escalables y optimización de procesos empresariales. Me adapto rápidamente a nuevas tecnologías y metodologías. También cuento con experiencia en frontend con Flutter, React y Astro.",
       "location": {
         "city": "Tuxtla Gutiérrez",
         "countryCode": "MX",
@@ -63,10 +63,10 @@
     "basics": {
       "name": "Juan P. Samayoa",
       "label": "Software Engineer",
-      "image": "/face.jpg",
+      "image": "/face.webp",
       "email": "samajpablo@gmail.com",
       "phone": "+52 961 251-9488",
-      "summary": "Engineer with experience in backend and frontend solutions development, specialized in Python and frameworks such as Django, Flask, and Odoo. I have experience in gathering functional requirements, designing scalable solutions, and optimizing business processes. I quickly adapt to new technologies and methodologies, with an interest in strengthening my skills in Java ecosystems (Java, Spring). I also have frontend experience with Flutter, React, and Astro.",
+      "summary": "Engineer with experience in backend and frontend solutions development, specialized in Python and frameworks such as Django, Flask, and Odoo. I have experience in gathering functional requirements, designing scalable solutions, and optimizing business processes. I quickly adapt to new technologies and methodologies. I also have frontend experience with Flutter, React, and Astro.",
       "location": {
         "city": "Tuxtla Gutiérrez",
         "countryCode": "MX",
@@ -119,7 +119,7 @@
       }
     ]
   },
-   "projects": [
+  "projects": [
     {
       "name": "Document Manager",
       "startDate": "2019-01-01",
@@ -128,7 +128,11 @@
         "en": "Web app to manage documents, upload files, aply filters, you can manage users, roles and permissions of each one. <br/>Try It* Credentials to test:<br/> mail: <strong>viewer@mail.com</strong> password: <strong>viewer</strong>",
         "es": "Aplicación web para administrar documentos, subir archivos, aplicar filtros, puedes administrar usuarios, roles y permisos de cada uno. <br/>Pruébelo* Credenciales para probar:<br/> correo: <strong>viewer@mail.com</strong> contraseña: <strong>viewer</strong>"
       },
-      "image": "/projects_images/document_manager.png",
+      "images": [
+        "/projects_images/document_manager.webp",
+        "/projects_images/document_manager_3.webp",
+        "/projects_images/document_manager_2.webp"
+      ],
       "tags": ["Python", "Flask", "Web"],
       "url": "",
       "github": "https://github.com/juanpsama/Document-Manager-Flask"
@@ -141,7 +145,7 @@
         "en": "Web app that segments an image and assign numbers to each color to paint it by hand. Make an Special gift and become an artist yourself.",
         "es": "Aplicación web que segmenta una imagen y asigna números a cada color para pintarla a mano. Haz un regalo especial y conviértete en un artista."
       },
-      "image": "/projects_images/paint_by_numbers.png",
+      "images": ["/projects_images/paint_by_numbers.webp"],
       "tags": ["Flask", "Image Processing"],
       "url": "",
       "github": ""
@@ -154,7 +158,11 @@
         "en": "CellAttack is an exciting video game crafted with Unity using C#. Dive into the microscopic world where you take on the role of a bacterium trying to survive the onslaught of formidable bacteriophages",
         "es": "CellAttack es un emocionante videojuego creado con Unity usando C#. Sumérgete en un mundo microscópico donde asumes el papel de una bacteria que intenta sobrevivir al ataque de formidables bacteriófagos."
       },
-      "image": "/projects_images/cellattack.gif",
+      "images": [
+        "/projects_images/cellattack.gif",
+        "/projects_images/cellattack_2.webp",
+        "/projects_images/cellattack_3.webp"
+      ],
       "tags": ["C#", "Unity", "Game Dev"],
       "url": "https://thelastjpg.itch.io/cellattack",
       "github": ""
@@ -167,7 +175,7 @@
         "en": "Bio-Bikes is a project that utilizes Python, Tkinter for the UI, OpenCV and Mediapipe's pose detection models to optimize performance and prevent injuries in cyclists.",
         "es": "Bio-Bikes es un proyecto que utiliza Python, Tkinter para la interfaz de usuario, OpenCV y los modelos de detección de pose de Mediapipe para optimizar el rendimiento y prevenir lesiones en los ciclistas."
       },
-      "image": "/projects_images/bikes.png",
+      "images": ["/projects_images/bikes.webp"],
       "tags": ["Python", "Computer Vision", "Desktop", "Tkinter"],
       "url": "",
       "github": "https://github.com/juanpsama/bio-bikes"
@@ -180,30 +188,33 @@
         "en": "Maze of Bullet is a small yet intense game that places you, a tiny square, within the confines of a treacherous maze. Showcases my skills in game and programing logic",
         "es": "Maze of Bullet es un juego pequeño pero intenso que te sitúa, un pequeño cuadrado, dentro de los límites de un traicionero laberinto. Muestra mis habilidades en lógica de videojuegos y programación."
       },
-      "image": "/projects_images/maze.png",
+      "images": [
+        "/projects_images/maze.webp",
+        "/projects_images/maze_2.webp",
+        "/projects_images/maze_3.webp"
+      ],
       "tags": ["C#", "Unity", "Bullet Hell"],
       "url": "https://kleyma.itch.io/maze-of-bullets",
       "github": ""
     }
   ],
-   "skills": [{
+  "skills": [
+    {
       "name": "Web Development",
       "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
-    }],
-    "languages": [{
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
       "language": "English",
       "fluency": "Native speaker"
-    }],
-    "interests": [{
+    }
+  ],
+  "interests": [
+    {
       "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }]
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ]
 }
