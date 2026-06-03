@@ -125,8 +125,8 @@
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": {
-        "en": "Web app to manage documents, upload files, aply filters, you can manage users, roles and permissions of each one. <br/>Try It* Credentials to test:<br/> mail: <strong>viewer@mail.com</strong> password: <strong>viewer</strong>",
-        "es": "Aplicación web para administrar documentos, subir archivos, aplicar filtros, puedes administrar usuarios, roles y permisos de cada uno. <br/>Pruébelo* Credenciales para probar:<br/> correo: <strong>viewer@mail.com</strong> contraseña: <strong>viewer</strong>"
+        "en": "Web app to manage documents, upload files, aply filters, you can manage users, roles and permissions of each one.",
+        "es": "Aplicación web para administrar documentos, subir archivos, aplicar filtros, puedes administrar usuarios, roles y permisos de cada uno."
       },
       "images": [
         "/projects_images/document_manager.webp",
