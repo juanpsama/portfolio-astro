@@ -120,6 +120,38 @@
     ]
   },
   "projects": [
+     {
+      "name": "FleetManagement",
+      "startDate": "",
+      "endDate": "",
+      "description": {
+        "en": "Real-time fleet management platform. GPS IoT devices report vehicle locations to a FastAPI backend, which processes the data stream through Redis Streams and dedicated workers for database persistence. Exposes a REST API for user/auth management and vehicle CRUD, plus a WebSocket endpoint for live vehicle tracking.",
+        "es": "Plataforma de gestión de flotas en tiempo real. Dispositivos IoT GPS reportan ubicaciones de vehículos a un backend en FastAPI, que procesa el flujo de datos a través de Redis Streams y workers dedicados para la persistencia en base de datos. Expone una API REST para gestión de usuarios/autenticación y CRUD de vehículos, más un endpoint WebSocket para seguimiento en vivo."
+      },
+      "images": [
+        "/projects_images/satelital_1.webp",
+        "/projects_images/satelital.gif",
+        "/projects_images/satelital_2.webp"
+      ],
+      "tags": ["FastAPI", "Redis", "WebSocket", "Python"],
+      "url": "",
+      "github": ""
+    },
+    {
+      "name": "jpico_url",
+      "startDate": "2026-06-01",
+      "endDate": null,
+      "description": {
+        "en": "A minimal URL shortener API built with Python, FastAPI, and Redis. It maps long URLs to mathematically obfuscated 4-character short codes and provides fast automatic redirects.",
+        "es": "Una API minimalista de acortamiento de URLs construida con Python, FastAPI y Redis. Mapea URLs largas a códigos cortos de 4 caracteres matemáticamente ofuscados y provee redirecciones automáticas."
+      },
+      "images": [ 
+        "/projects_images/jpicourl_1.webp"
+      ],
+      "tags": ["Python", "In-Progress", "PostgreSQL"],
+      "url": "",
+      "github": "https://github.com/juanpsama/jpico_url"
+    },
     {
       "name": "Document Manager",
       "startDate": "2019-01-01",
