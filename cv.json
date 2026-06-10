@@ -122,11 +122,9 @@
   "projects": [
      {
       "name": "FleetManagement",
-      "startDate": "",
-      "endDate": "",
       "description": {
-        "en": "Real-time fleet management platform. GPS IoT devices report vehicle locations to a FastAPI backend, which processes the data stream through Redis Streams and dedicated workers for database persistence. Exposes a REST API for user/auth management and vehicle CRUD, plus a WebSocket endpoint for live vehicle tracking.",
-        "es": "Plataforma de gestión de flotas en tiempo real. Dispositivos IoT GPS reportan ubicaciones de vehículos a un backend en FastAPI, que procesa el flujo de datos a través de Redis Streams y workers dedicados para la persistencia en base de datos. Expone una API REST para gestión de usuarios/autenticación y CRUD de vehículos, más un endpoint WebSocket para seguimiento en vivo."
+        "en": "Real-time fleet management platform. GPS devices report vehicle locations to a FastAPI backend, which processes the data stream through Redis Streams and dedicated workers for database persistence. Exposes a REST API for user/auth management and vehicle CRUD, plus a WebSocket endpoint for live vehicle tracking.",
+        "es": "Plataforma de gestión de flotas en tiempo real. Dispositivos GPS reportan ubicaciones de vehículos a un backend en FastAPI, que procesa el flujo de datos a través de Redis Streams y workers dedicados para la persistencia en base de datos. Expone una API REST para gestión de usuarios/autenticación y CRUD de vehículos, más un endpoint WebSocket para seguimiento en vivo."
       },
       "images": [
         "/projects_images/satelital_1.webp",
@@ -139,25 +137,21 @@
     },
     {
       "name": "jpico_url",
-      "startDate": "2026-06-01",
-      "endDate": null,
       "description": {
-        "en": "A minimal URL shortener API built with Python, FastAPI, and Redis. It maps long URLs to mathematically obfuscated 4-character short codes and provides fast automatic redirects.",
-        "es": "Una API minimalista de acortamiento de URLs construida con Python, FastAPI y Redis. Mapea URLs largas a códigos cortos de 4 caracteres matemáticamente ofuscados y provee redirecciones automáticas."
+        "en": "A minimal URL shortener API that scales, built with Python, FastAPI, and Redis. Uses cache-aside pattern for read throughput, single-flight locking to prevent stampedes under load.",
+        "es": "Una API minimalista para acortar URLs que escala, construida con Python, FastAPI y Redis. Usa el patrón cache-aside para rendimiento de lectura y single-flight locking para prevenir estampidas bajo carga."
       },
       "images": [ 
         "/projects_images/jpicourl_1.webp"
       ],
-      "tags": ["Python", "In-Progress", "PostgreSQL"],
+      "tags": ["Python", "In-Progress", "Scalable"],
       "url": "",
       "github": "https://github.com/juanpsama/jpico_url"
     },
     {
       "name": "Document Manager",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
       "description": {
-        "en": "Web app to manage documents, upload files, aply filters, you can manage users, roles and permissions of each one.",
+        "en": "Web app to manage documents, upload files, apply filters, you can manage users, roles and permissions of each one.",
         "es": "Aplicación web para administrar documentos, subir archivos, aplicar filtros, puedes administrar usuarios, roles y permisos de cada uno."
       },
       "images": [
@@ -171,8 +165,6 @@
     },
     {
       "name": "Paint By Numbers",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
       "description": {
         "en": "Web app that segments an image and assign numbers to each color to paint it by hand. Make an Special gift and become an artist yourself.",
         "es": "Aplicación web que segmenta una imagen y asigna números a cada color para pintarla a mano. Haz un regalo especial y conviértete en un artista."
@@ -184,8 +176,6 @@
     },
     {
       "name": "CellAttack",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
       "description": {
         "en": "CellAttack is an exciting video game crafted with Unity using C#. Dive into the microscopic world where you take on the role of a bacterium trying to survive the onslaught of formidable bacteriophages",
         "es": "CellAttack es un emocionante videojuego creado con Unity usando C#. Sumérgete en un mundo microscópico donde asumes el papel de una bacteria que intenta sobrevivir al ataque de formidables bacteriófagos."
@@ -201,8 +191,6 @@
     },
     {
       "name": "BioBikes",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
       "description": {
         "en": "Bio-Bikes is a project that utilizes Python, Tkinter for the UI, OpenCV and Mediapipe's pose detection models to optimize performance and prevent injuries in cyclists.",
         "es": "Bio-Bikes es un proyecto que utiliza Python, Tkinter para la interfaz de usuario, OpenCV y los modelos de detección de pose de Mediapipe para optimizar el rendimiento y prevenir lesiones en los ciclistas."
@@ -214,8 +202,6 @@
     },
     {
       "name": "Maze of Bullets",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
       "description": {
         "en": "Maze of Bullet is a small yet intense game that places you, a tiny square, within the confines of a treacherous maze. Showcases my skills in game and programing logic",
         "es": "Maze of Bullet es un juego pequeño pero intenso que te sitúa, un pequeño cuadrado, dentro de los límites de un traicionero laberinto. Muestra mis habilidades en lógica de videojuegos y programación."
