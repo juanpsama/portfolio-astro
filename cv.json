@@ -42,7 +42,8 @@
           "Administración de bases de datos y despliegues en entornos de producción, garantizando estabilidad y rendimiento del sistema.",
           "Levantamiento de requerimientos con distintas áreas operativas para diseñar soluciones que optimicen procesos logísticos y administrativos.",
           "Acompañamiento técnico a usuarios finales, asegurando la correcta adopción de las herramientas implementadas.",
-          "Desarrollo móvil e IoT para automatización de asistencias y procesos operativos de la empresa, incluyendo integración con Odoo."
+          "Desarrollo móvil e IoT para automatización de asistencias y procesos operativos de la empresa, incluyendo integración con Odoo.",
+          "Desarrollo en Flutter de una plataforma de acceso administrativo como extensión del ERP para personal en campo."
         ]
       },
       {
@@ -102,7 +103,8 @@
           "Managed databases and production deployments, ensuring system stability and performance.",
           "Gathered requirements from different operational areas to design solutions optimizing logistics and administrative processes.",
           "Provided technical support to end users, ensuring proper adoption of implemented tools.",
-          "Mobile and IoT development for automating attendance and operational processes, including Odoo integration."
+          "Mobile and IoT development for automating attendance and operational processes, including Odoo integration.",
+          "Flutter development of an administrative access platform as an ERP extension for field personnel."
         ]
       },
       {
@@ -120,7 +122,7 @@
     ]
   },
   "projects": [
-     {
+    {
       "name": "FleetManagement",
       "description": {
         "en": "Real-time fleet management platform. GPS devices report vehicle locations to a FastAPI backend, which processes the data stream through Redis Streams and dedicated workers for database persistence. Exposes a REST API for user/auth management and vehicle CRUD, plus a WebSocket endpoint for live vehicle tracking.",
@@ -147,6 +149,20 @@
       "tags": ["Python", "In-Progress", "Scalable"],
       "url": "",
       "github": "https://github.com/juanpsama/jpico_url"
+    },
+    {
+      "name": "Módulo de Automatización RH — ERP Odoo",
+      "description": {
+        "en": "Custom Odoo module to automate the full HR cycle: attendance tracking, payroll computation, leave and permit management. Integrated with biometric devices and a Flutter mobile app, enabling real-time access for field and administrative personnel.",
+        "es": "Módulo personalizado de Odoo que automatiza el ciclo completo de RH: registro de asistencias, cálculo de nómina y gestión de licencias y permisos. Integrado con dispositivos biométricos y una app móvil en Flutter para acceso en tiempo real del personal administrativo y de campo."
+      },
+      "images": [
+        "/projects_images/odoo_1.webp",
+        "/projects_images/odoo_2.webp"
+      ],
+      "tags": ["Python", "Odoo", "ERP", "HR"],
+      "url": "",
+      "github": ""
     },
     {
       "name": "Document Manager",
