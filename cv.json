@@ -135,7 +135,8 @@
       ],
       "tags": ["FastAPI", "Redis", "WebSocket", "Python"],
       "url": "",
-      "github": ""
+      "github": "",
+      "hide": false
     },
     {
       "name": "jpico_url",
@@ -148,7 +149,8 @@
       ],
       "tags": ["Python", "In-Progress", "Scalable"],
       "url": "",
-      "github": "https://github.com/juanpsama/jpico_url"
+      "github": "https://github.com/juanpsama/jpico_url",
+      "hide": false
     },
     {
       "name": "Módulo de Automatización RH — ERP Odoo",
@@ -162,7 +164,8 @@
       ],
       "tags": ["Python", "Odoo", "ERP", "HR"],
       "url": "",
-      "github": ""
+      "github": "",
+      "hide": false
     },
     {
       "name": "Document Manager",
@@ -177,7 +180,8 @@
       ],
       "tags": ["Python", "Flask", "Web"],
       "url": "",
-      "github": "https://github.com/juanpsama/Document-Manager-Flask"
+      "github": "https://github.com/juanpsama/Document-Manager-Flask",
+      "hide":true
     },
     {
       "name": "Paint By Numbers",
@@ -188,7 +192,8 @@
       "images": ["/projects_images/paint_by_numbers.webp"],
       "tags": ["Flask", "Image Processing"],
       "url": "",
-      "github": ""
+      "github": "",
+      "hide": false
     },
     {
       "name": "CellAttack",
@@ -203,7 +208,8 @@
       ],
       "tags": ["C#", "Unity", "Game Dev"],
       "url": "https://thelastjpg.itch.io/cellattack",
-      "github": ""
+      "github": "",
+      "hide": false
     },
     {
       "name": "BioBikes",
@@ -214,7 +220,8 @@
       "images": ["/projects_images/bikes.webp"],
       "tags": ["Python", "Computer Vision", "Desktop", "Tkinter"],
       "url": "",
-      "github": "https://github.com/juanpsama/bio-bikes"
+      "github": "https://github.com/juanpsama/bio-bikes",
+      "hide":true
     },
     {
       "name": "Maze of Bullets",
@@ -229,7 +236,8 @@
       ],
       "tags": ["C#", "Unity", "Bullet Hell"],
       "url": "https://kleyma.itch.io/maze-of-bullets",
-      "github": ""
+      "github": "",
+      "hide": false
     }
   ],
   "skills": [
