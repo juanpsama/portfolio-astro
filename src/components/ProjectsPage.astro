@@ -13,7 +13,7 @@ const { projects } = cvData;
 <Layout title={t('projects.title')}>
   <TealBox>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex justify-center">
-      {projects.map(project => (
+      {projects.filter(project=>!project.hide).map(project => (
         <ProjectCard
           client:visible
           images={project.images}
